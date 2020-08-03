@@ -1,0 +1,253 @@
+<!--
+=========================================================
+* Paper Kit Pro - v2.3.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-kit-2-pro
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static',filename='assets/img//apple-icon.png')}}">
+    <link rel="icon" type="image/png" href="{{ url_for('static',filename='favicon.ico')}}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+      CreditKonnect
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="{{ url_for('static',filename='assets/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='assets/css/paper-kit.css')}}" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="{{ url_for('static',filename='assets/demo/demo.css')}}" rel="stylesheet" />
+  </head>
+
+<body class="register-page full-screen sidebar-collapse">
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg bg-white fixed-top nav-down navbar-transparent" color-on-scroll="500">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="/" rel="tooltip" title="Paper Kit 2 PRO" data-placement="bottom" target="_blank">
+        CreditKonnect
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+      <ul class="navbar-nav ml-auto">
+
+
+
+
+        <!-- <li class="nav-item">
+        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+          <i class="fab fa-twitter"></i>
+          <p class="hidden-lg-up">Twitter</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+          <p class="hidden-lg-up">Facebook</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <p class="hidden-lg-up">Instagram</p>
+        </a>
+      </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+  <!-- <div class="page-header" style="background-image: url('assets/img/login-image.jpg');">-->
+  <!--
+
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('assets/img/sections/soroush-karimi.jpg');">
+        <div class="filter"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-7 col-12 ml-auto">
+					<div class="info info-horizontal">
+						<div class="icon">
+							<i class="fa fa-umbrella"></i>
+						</div>
+						<div class="description">
+							<h3> We want your money </h3>
+							<p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. Everything you need in a single case.</p>
+						</div>
+					</div>
+					<div class="info info-horizontal">
+						<div class="icon">
+							<i class="fa fa-map-signs"></i>
+						</div>
+						<div class="description">
+							<h3> Clear Directions </h3>
+							<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+						</div>
+					</div>
+					<div class="info info-horizontal">
+						<div class="icon">
+							<i class="fa fa-user-secret"></i>
+						</div>
+						<div class="description">
+							<h3> We value your privacy </h3>
+							<p>Completely synergize resource taxing relationships via premier niche markets.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-5 col-12 mr-auto">
+					<div class="card card-register">
+						<h3 class="card-title text-center">Register</h3>
+						<div class="social">
+							<button href="#paper-kit" class="btn btn-just-icon btn-facebook"><i class="fa fa-facebook"></i></button>
+							<button href="#paper-kit" class="btn btn-just-icon btn-google"><i class="fa fa-google"></i></button>
+							<button href="#paper-kit" class="btn btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></button>
+						</div>
+
+						<div class="division">
+							<div class="line l"></div>
+							<span>or</span>
+							<div class="line r"></div>
+						</div>
+                      {{ message }}
+						<form class="register-form" action="/signup" method="post">
+
+                            <input type="text" class="form-control" name="fname" placeholder="First Name">
+
+                            <input type="text" class="form-control" name="lname" placeholder="Last Name">
+
+							<input type="text" class="form-control" name="user" placeholder="Email">
+
+							<input type="password" class="form-control" name="pass" placeholder="Password">
+
+
+							<button type="submit" class="btn btn-block btn-round">Register</button>
+						</form>
+						<div class="login">
+							<p>Already have an account? <a href="/login">Log in</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="demo-footer text-center">
+                <h6>&copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Creative Tim</h6>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div> -->
+  <div class="wrapper">
+    <div class="page-header" style="background-image: url('{{ url_for('static',filename='assets/img/sections/soroush-karimi.jpg')}}');">
+      <div class="filter"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-7 col-12 ml-auto">
+            <div class="info info-horizontal">
+              <div class="icon">
+                <i class="fa fa-umbrella"></i>
+              </div>
+              <div class="description">
+                <h3> We've got your money </h3>
+                <p>:lkjfad;skfj a;sdl fkja;sldkfj a;sdlkf ja;dlkf j</p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon">
+                <i class="fa fa-map-signs"></i>
+              </div>
+              <div class="description">
+                <h3> Clearly, we want your money </h3>
+                <p>L;laksdjf ;alskkj a;sldkfj a;slkdfj sa;ldkfj </q></p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon">
+                <i class="fa fa-user-secret"></i>
+              </div>
+              <div class="description">
+                <h3> We value your money </h3>
+                <p>:Lija;dslfkja;sdlkfj a;slkfj a;sldkfj s;alkfj sa;dlkfj </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-5 col-12 mr-auto">
+            <div class="card card-register">
+              <h3 class="card-title text-center">Register</h3>
+              <p style="color: black;">{{ message }}</p>
+              <form class="register-form" action="/signup" method="post">
+
+                  <input type="text" class="form-control" name="fname" placeholder="First Name">
+
+                  <input type="text" class="form-control" name="lname" placeholder="Last Name">
+
+                  <input type="text" class="form-control" name="user" placeholder="Email">
+
+                  <input type="password" class="form-control" name="pass" placeholder="Password">
+
+
+                  <button type="submit" class="btn btn-block btn-round">Register</button>
+              </form>
+              <div class="login">
+                <p><b>Already have an account? <a href="/login">Log in</a>.</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-footer text-center">
+      </div>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="{{ url_for('static',filename='assets/js/core/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static',filename='assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static',filename='assets/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/bootstrap-switch.js')}}"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/nouislider.min.js')}}" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/moment.min.js')}}"></script><!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/bootstrap-tagsinput.js')}}"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/bootstrap-selectpicker.js')}}" type="text/javascript"></script>
+  <!--	Plugin for Datetimepicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/bootstrap-datetimepicker.js')}}" type="text/javascript"></script>
+  <!--  Plugin for presentation page - isometric cards  -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/presentation-page/main.js')}}"></script>
+  <!--  Vertical nav - dots -->
+  <!--  Photoswipe files -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/photo_swipe/photoswipe.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='assets/js/plugins/photo_swipe/photoswipe-ui-default.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='assets/js/plugins/photo_swipe/init-gallery.js')}}"></script>
+  <!--  for Jasny fileupload -->
+  <script src="{{ url_for('static',filename='assets/js/plugins/jasny-bootstrap.min.js')}}"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="{{ url_for('static',filename='assets/js/paper-kit.js')}}" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+</body>
+
+</html>
